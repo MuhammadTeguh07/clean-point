@@ -8,6 +8,7 @@ import "@/app/style/header.css";
 import "@/app/style/home.css";
 import "@/app/style/project.css";
 import "@/app/style/service.css";
+import "@/app/style/priority.css";
 import "@/app/style/testimonial.css";
 
 const poppins = Poppins({

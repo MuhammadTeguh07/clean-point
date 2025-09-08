@@ -8,7 +8,7 @@ import { handleScroll } from "@/functions/general";
 
 export default function Header() {
     const [isMenuActive, setIsMenuActive] = useState("beranda");
-    const listMenu = ["Beranda", "Tentang", "Testimoni"];
+    const listMenu = ["Beranda", "Layanan", "Tentang", "Testimoni"];
 
     useEffect(() => {
         const sections = document.querySelectorAll('section');
@@ -48,7 +48,7 @@ export default function Header() {
                             listMenu.map((item, index) => (
                                 <li className="nav-item" onClick={() => handleScroll(item.toLowerCase(), setIsMenuActive)} key={index}>
                                     {
-                                        item === "Home" ? <a href="#" className={`nav-link ${isMenuActive === item.toLowerCase() && 'active'}`}><span>{item}</span></a>
+                                        item === "Beranda" ? <a href="#" className={`nav-link ${isMenuActive === item.toLowerCase() && 'active'}`}><span>{item}</span></a>
                                             : <a href={`#${item.toLowerCase()}`} className={`nav-link ${isMenuActive === item.toLowerCase() && 'active'}`}><span>{item}</span></a>
                                     }
                                 </li>

@@ -4,6 +4,7 @@ import About from "@/components/Layout/About";
 import Footer from "@/components/Layout/Footer";
 import Header from "@/components/Layout/Header";
 import Home from "@/components/Layout/Home";
+import Priority from "@/components/Layout/Priority";
 import Project from "@/components/Layout/Project";
 import Service from "@/components/Layout/Service";
 import Testimonial from "@/components/Layout/Testimonial";
@@ -23,9 +24,9 @@ export default function RootPage() {
         <Header />
         <main>
           <section id="beranda"><Home /></section>
-          <section id="tentang"><Service /></section>
-          <section id="about"><About /></section>
-          <section id="project"><Project /></section>
+          <section id="layanan"><Service /></section>
+          <section id="tentang"><About /></section>
+          <section id="priority"><Priority /></section>
           <section id="testimonial"><Testimonial /></section>
         </main>
         <Footer />

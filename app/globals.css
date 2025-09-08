@@ -11,7 +11,8 @@
   --accent-color-light: #8e998a33;
   --text-color-light: #fbfbfe;
   --text-color-dark: #050316;
-  --background-color: #fbfbfe;
+  --background-color: white;
+  /* --background-color: #fbfbfe; */
 }
 
 html {
