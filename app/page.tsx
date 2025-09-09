@@ -27,7 +27,7 @@ export default function RootPage() {
           <section id="layanan"><Service /></section>
           <section id="tentang"><About /></section>
           <section id="priority"><Priority /></section>
-          <section id="testimonial"><Testimonial /></section>
+          <section id="testimoni"><Testimonial /></section>
         </main>
         <Footer />
       </div>

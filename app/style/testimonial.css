@@ -1,17 +1,30 @@
 .testimonial {
   background-color: var(--background-color);
-  padding: 7rem 10rem;
   color: var(--text-color-dark);
   text-align: center;
+  padding: 4rem;
 
   .title {
     letter-spacing: 10px;
+  }
+
+  .card-testimonial {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--secondary-color-light);
   }
 
   .tagline {
     font-size: 50px;
     font-weight: bold;
     line-height: 60px;
+  }
+
+  .sub-title-tagline {
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 1rem;
   }
 
   .sub-tagline {
@@ -39,7 +52,7 @@
     opacity: 0.5;
   }
 
-  .card .rating-card {
+  .rating-card {
     align-items: center;
     display: flex;
     gap: 0.3rem;
@@ -73,7 +86,7 @@
 @media (max-width: 768px) {
   .testimonial {
     padding: 3rem 1.5rem;
-    
+
     .title {
       font-size: 15px;
     }

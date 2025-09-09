@@ -2,85 +2,59 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import TestimonialCarausel from "../Caraousel/Testimonial";
+import { TestimonialProps } from "@/interface/testimonial";
 
 export default function Testimonial() {
-    const [isVisible, setIsVisible] = useState(false);
-    const sectionRef = useRef(null);
 
-    const data = [
+    const data: TestimonialProps[] = [
         {
-            title: "Robert Doe",
-            subtitle: "Product Owner",
-            rating: 4.5,
-            desc: "Wow! I love this site. Realtime Colors is all websites at the same time.",
+            name: "Robert Doe",
+            rating: 5,
+            testimonial: "Proses deep clean sepatu di CleanPoint sangat rapi dan cepat. Dengan pengerjaan cepat, hasilnya luar biasa."
         },
         {
-            title: "Robert Doe",
-            subtitle: "Product Owner",
-            rating: 4.5,
-            desc: "Wow! I love this site. Realtime Colors is all websites at the same time.",
+            name: "Robert Doe",
+            rating: 5,
+            testimonial: "Dapat rekomendasi cuci sepatu disini, Dari semua laundry sepatu yang udah pernah aku coba. Disini sih terbaik menurut ku. Recomendeed!!!",
         },
         {
-            title: "Robert Doe",
-            subtitle: "Product Owner",
-            rating: 4.5,
-            desc: "Wow! I love this site. Realtime Colors is all websites at the same time.",
+            name: "Robert Doe",
+            rating: 5,
+            testimonial: "Laundry sepatu terbaik sih menurut aku. Mulai order dan diantar jemput udah gitu packagingnya rapi banget.",
         },
         {
-            title: "Robert Doe",
-            subtitle: "Product Owner",
-            rating: 4.5,
-            desc: "Wow! I love this site. Realtime Colors is all websites at the same time.",
+            name: "Robert Doe",
+            rating: 5,
+            testimonial: "Nyoba nyuci sepatu disini. Kaget sama hasilnya bersih banget. Thanks!",
+        },
+        {
+            name: "Robert Doe",
+            rating: 5,
+            testimonial: "Cuci sepatu disini puasss banget!! CS ramah dan helpfull",
+        },
+        {
+            name: "Robert Doe",
+            rating: 5,
+            testimonial: "Saya sangat puas dengan cara perawatan sepatu putih yang dilakukan di CleanPoint. Sepatu saya terlihat seperti baru lagi.",
+        },
+        {
+            name: "Robert Doe",
+            rating: 5,
+            testimonial: "Hasil cuci sepatu suede kotor di CleanPoint sangat luar biasa. Sepatu saya kini terlihat seperti baru dan harum.",
         },
     ]
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    setIsVisible(true);
-                }
-            },
-            { threshold: 0.3 }
-        );
-
-        if (sectionRef.current) {
-            observer.observe(sectionRef.current);
-        }
-
-        return () => {
-            if (sectionRef.current) {
-                observer.unobserve(sectionRef.current);
-            }
-        };
-    }, []);
-
     return (
-        <div ref={sectionRef} className="testimonial">
-            <div className="flex flex-col gap-3 pb-14">
-                <div className={`title ${isVisible && "animate-fadeIn"}`}>TESTIMONIAL</div>
-                <div className={`tagline ${isVisible && "animate-fadeIn"}`}><span className="sub-tagline">My Happy</span> Client</div>
-            </div>
-            <div className="grid md:grid-cols-2 gap-5">
-                {
-                    data.map((item, index) => (
-                        <div className={`card ${isVisible && index % 2 === 0 && "animate-slideInLeft" || isVisible && index % 2 === 1 && "animate-slideInRight"}`} key={index}>
-                            <div className="flex justify-between items-center w-full">
-                                <div className="text-left">
-                                    <div className="title-card">{item.title}</div>
-                                    <div className="subtitle-card">{item.subtitle}</div>
-                                </div>
-                                <div className="rating-card">
-                                    <Image src="/icons/star.png" alt="star" width={15} height={15} />
-                                    {item.rating}
-                                </div>
-                            </div>
-                            <div className="desc-card">
-                                &#34;{item.desc}&#34;
-                            </div>
-                        </div>
-                    ))
-                }
+        <div className="testimonial">
+            <div className="w-full min-h-screen flex items-center">
+                <div className="max-w-full mx-auto overflow-hidden">
+                    <div className="w-full flex items-center flex-col gap-1 justify-center px-4">
+                        <div className={`title-testimonial`}>Testimoni Klien</div>
+                        <div className={`sub-title-tagline`}>Alasan Klien Selalu Kembali</div>
+                    </div>
+                    <TestimonialCarausel data={data} />
+                </div>
             </div>
         </div>
     )
