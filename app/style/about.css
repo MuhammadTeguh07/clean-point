@@ -1,6 +1,6 @@
 .about {
   background-color: var(--background-color);
-  padding: 4rem;
+  padding: 8rem 4rem;
   color: var(--text-color-dark);
 
   .title-tagline {

@@ -2,7 +2,7 @@
   background-color: var(--background-color);
   color: var(--text-color-dark);
   text-align: center;
-  padding: 4rem;
+  padding: 7rem 4rem;
 
   .title {
     letter-spacing: 10px;

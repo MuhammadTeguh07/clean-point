@@ -16,13 +16,14 @@ export default function Header() {
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        setIsMenuActive(entry.target.id);
+                        if(entry.target.id === "priority") setIsMenuActive("tentang");
+                        else setIsMenuActive(entry.target.id);
                     }
                 });
             },
             {
-                rootMargin: '0px 0px -10% 0px', // Agar menu aktif sedikit sebelum bagian tengah layar
-                threshold: 0.18, // Mengaktifkan saat 50% elemen terlihat
+                rootMargin: '0px 0px 0% 0px', // Agar menu aktif sedikit sebelum bagian tengah layar
+                threshold: 0.50, // Mengaktifkan saat 50% elemen terlihat
             }
         );
 

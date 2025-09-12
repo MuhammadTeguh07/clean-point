@@ -187,8 +187,8 @@ export default {
 				zoomIn: 'zoomIn 1s ease-in-out',
 				zoomOut: 'zoomOut 0.5s ease-in-out',
 				wiggle: 'wiggle 1s ease-in-out infinite',
-				scroll: 'scroll 100s infinite',
-				scrollReverse: 'scrollReverse 100s infinite'
+				scroll: 'scroll 200s linear infinite',
+				scrollReverse: 'scrollReverse 200s linear infinite'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

@@ -9,37 +9,37 @@ export default function Testimonial() {
 
     const data: TestimonialProps[] = [
         {
-            name: "Robert Doe",
+            name: "Alfan",
             rating: 5,
             testimonial: "Proses deep clean sepatu di CleanPoint sangat rapi dan cepat. Dengan pengerjaan cepat, hasilnya luar biasa."
         },
         {
-            name: "Robert Doe",
+            name: "Hendy",
             rating: 5,
             testimonial: "Dapat rekomendasi cuci sepatu disini, Dari semua laundry sepatu yang udah pernah aku coba. Disini sih terbaik menurut ku. Recomendeed!!!",
         },
         {
-            name: "Robert Doe",
+            name: "Artha",
             rating: 5,
             testimonial: "Laundry sepatu terbaik sih menurut aku. Mulai order dan diantar jemput udah gitu packagingnya rapi banget.",
         },
         {
-            name: "Robert Doe",
+            name: "Shabrina",
             rating: 5,
             testimonial: "Nyoba nyuci sepatu disini. Kaget sama hasilnya bersih banget. Thanks!",
         },
         {
-            name: "Robert Doe",
+            name: "Fauzan",
             rating: 5,
             testimonial: "Cuci sepatu disini puasss banget!! CS ramah dan helpfull",
         },
         {
-            name: "Robert Doe",
+            name: "Iqbal",
             rating: 5,
             testimonial: "Saya sangat puas dengan cara perawatan sepatu putih yang dilakukan di CleanPoint. Sepatu saya terlihat seperti baru lagi.",
         },
         {
-            name: "Robert Doe",
+            name: "Zaki",
             rating: 5,
             testimonial: "Hasil cuci sepatu suede kotor di CleanPoint sangat luar biasa. Sepatu saya kini terlihat seperti baru dan harum.",
         },
